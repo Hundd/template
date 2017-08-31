@@ -55,9 +55,10 @@
 }
 
 .bag-title {
-    padding: 16px 0 0 13px;
-    font: bold 12px/20px Roboto;
     float: left;
+    width: 50%;
+    padding: 5px 0 0 13px;
+    font: bold 12px/20px Roboto;
 }
 
 .bag-price {
@@ -81,14 +82,6 @@
     margin-top: 20px;
 }
 
-.bag-item-description button:hover {
-    color: #f67;
-}
-
-.bag-item-description button:active {
-    color: #c5c5c5;
-}
-
 .bag-promo {
     margin: 35px 0 0 0;
     padding: 15px 25px;
@@ -99,12 +92,13 @@
 }
 
 .bag-footer {
-    padding: 20px 20px 35px;
+    padding: 20px 20px 20px;
 }
 
 .bag-footer-left {
     display: block;
     float: left;
+    padding: 0;
     padding-top: 28px;
     background: none;
     border: none;
@@ -127,4 +121,118 @@
     background: none;
     outline: none;
     font: bold 18px "Open Sans";
+}
+
+.bag-message {
+    padding: 60px 20px 30px;
+    font: bold 18px "Open Sans";
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .bag-item {
+        width: 50%;
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    .bag-content {
+        padding: 30px 40px;
+    }
+    .bag-price {
+        padding-bottom: 10px;
+    }
+    .bag-item-description button {
+        margin-top: 0px;
+    }
+    .bag-footer {
+        padding: 30px 40px 60px;
+    }
+    /* FONTS */
+    .bag h2 {
+        height: 65px;
+        padding-left: 70px;
+        font: bold 20px/65px "Open Sans";
+    }
+    .bag-title {
+        font: bold 14px/24px Roboto;
+    }
+    .bag-price {
+        font: bold 14px Roboto;
+    }
+    .bag-item-characteristics {
+        font: 12px/24px Roboto;
+    }
+    .bag-item-description button {
+        cursor: pointer;
+        font: bold 13px "Open Sans";
+    }
+    .bag-promo {
+        font: bold 11px/16px "Open Sans";
+    }
+    .bag-footer-order {
+        padding: 25px 90px;
+        font: bold 20px "Open Sans";
+    }
+    .bag-footer-left {
+        padding-top: 32px;
+        font: bold 13px Roboto;
+    }
+    .bag-footer-right {
+        padding-top: 20px;
+        font: 12px Roboto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bag-item {
+        width: 50%;
+        padding: 0;
+        padding-bottom: 90px;
+    }
+    .bag-content {
+        padding: 30px 60px;
+    }
+    .bag-price {
+        padding-bottom: 30px;
+    }
+    .bag-item-description button {
+        margin-top: 20px;
+    }
+    .bag-footer {
+        padding: 30px 90px 60px;
+    }
+    /* FONTS */
+    .bag h2 {
+        height: 65px;
+        padding-left: 90px;
+        font: bold 26px/65px "Open Sans";
+    }
+    .bag-title {
+        font: bold 14px/24px Roboto;
+    }
+    .bag-price {
+        font: bold 16px Roboto;
+    }
+    .bag-item-characteristics {
+        font: 12px/24px Roboto;
+    }
+    .bag-item-description button {
+        cursor: pointer;
+        font: bold 13px "Open Sans";
+    }
+    .bag-promo {
+        font: bold 12px/16px "Open Sans";
+    }
+    .bag-footer-order {
+        padding: 25px 120px;
+        font: bold 24px "Open Sans";
+    }
+    .bag-footer-left {
+        padding-top: 35px;
+        font: bold 13px Roboto;
+    }
+    .bag-footer-right {
+        padding-top: 25px;
+        font: 12px Roboto;
+    }
 }

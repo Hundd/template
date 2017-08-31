@@ -24,12 +24,16 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.link:hover {
     color: #f14a58;
+    cursor: pointer;
 }
 
-a:active {
+a:active,
+.link:active {
     color: #c5c5c5;
+    cursor: pointer;
 }
 
 .clearfix:after {
@@ -41,4 +45,18 @@ a:active {
 em {
     font-style: normal;
     color: #f14a58;
+}
+
+.hoverable:hover {
+    color: #f14a58;
+    border-color: #f14a58;
+}
+
+.hoverable:active {
+    color: #c5c5c5;
+    border-color: #c5c5c5;
+}
+
+.is-hidden {
+    display: none;
 }

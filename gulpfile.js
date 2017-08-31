@@ -88,7 +88,6 @@ gulp.task('concat-shopping-bag', function() {
             './templates/shopping-bag-head.html',
             './templates/header-template.html',
             './templates/shopping-bag-template.html',
-            './templates/banners-template.html',
             './templates/footer-template.html',
             './templates/common-bottom.html'
         ])
