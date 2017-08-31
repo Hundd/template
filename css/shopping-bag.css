@@ -1,0 +1,130 @@
+.bag h2 {
+    height: 54px;
+    padding-left: 35px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    font: bold 18px "Open Sans";
+    line-height: 54px;
+    /* width: 100%; */
+}
+
+.bag-view-container {
+    position: relative;
+    width: 50%;
+    max-width: 240px;
+    float: left;
+}
+
+.bag-view-container img {
+    width: 100%;
+}
+
+.bag-view {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f14a58;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bag-item a:hover .bag-view {
+    visibility: visible;
+}
+
+.bag-item-description {
+    width: 50%;
+    float: left;
+    padding: 0 0 0 13px;
+    cursor: default;
+}
+
+.bag-item {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 512px;
+    padding: 15px 20px 25px 20px;
+}
+
+.bag-title {
+    padding: 16px 0 0 13px;
+    font: bold 12px/20px Roboto;
+    float: left;
+}
+
+.bag-price {
+    font: bold 14px Roboto;
+    padding: 10px 0 32px 0;
+}
+
+.bag-item-characteristics {
+    font: 10px/20px Roboto;
+}
+
+.bag-item-description button {
+    cursor: pointer;
+    font: bold 11px "Open Sans";
+    color: #f14a58;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.bag-item-description button:hover {
+    color: #f67;
+}
+
+.bag-item-description button:active {
+    color: #c5c5c5;
+}
+
+.bag-promo {
+    margin: 35px 0 0 0;
+    padding: 15px 25px;
+    border-top: 1px solid #e5e5e5;
+    background: #f7f7f7;
+    font: bold 10px/16px "Open Sans";
+    text-align: center;
+}
+
+.bag-footer {
+    padding: 20px 20px 35px;
+}
+
+.bag-footer-left {
+    display: block;
+    float: left;
+    padding-top: 28px;
+    background: none;
+    border: none;
+    outline: none;
+    font: 10px Roboto;
+}
+
+.bag-footer-right {
+    float: right;
+    padding-top: 15px;
+    font: 10px Roboto;
+    text-align: right;
+}
+
+.bag-footer-order {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border: 1px solid #e5e5e5;
+    background: none;
+    outline: none;
+    font: bold 18px "Open Sans";
+}

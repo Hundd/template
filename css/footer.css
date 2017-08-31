@@ -1,0 +1,259 @@
+.footer {
+    padding: 36px 0 30px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer h4 {
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer nav ul a {
+    display: block;
+    padding: 12px 0;
+    color: black;
+    font-family: Roboto;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer nav ul a:hover {
+    color: #f56;
+    text-decoration: none;
+}
+
+.footer-links-care {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 60px;
+}
+
+.footer-links {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+}
+
+.footer-links h4,
+.footer-care h4 {
+    padding-bottom: 24px;
+}
+
+.footer-care {
+    width: 50%;
+    float: right;
+    padding-left: 20px;
+}
+
+.footer-contacts {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-contacts .footer-social {
+    display: none;
+}
+
+.footer-questions {
+    width: 50%;
+    float: left;
+    padding: 24px 20px 40px 20px;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.footer-twitter {
+    padding-left: 25px;
+    margin-top: 16px;
+    background-image: url("../img/icons/twitter-gray.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+.footer-twitter a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-twitter a:hover {
+    color: #f56;
+}
+
+.footer-phone {
+    width: 50%;
+    /* height: 100%; */
+    float: right;
+    border-left: 1px solid #e5e5e5;
+    padding: 24px 20px 40px 20px;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.footer-phone h4 {
+    padding-bottom: 16px;
+}
+
+.footer-quote {
+    display: none;
+}
+
+.footer-bottom {}
+
+.footer-bottom-links {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-bottom-links li {
+    display: inline-block;
+}
+
+.footer-bottom .footer-bottom-links a {
+    padding-right: 14px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.footer-bottom .footer-social {
+    padding-top: 10px;
+    float: right;
+}
+
+.footer-icon {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footer-twitter-icon-blue {
+    background-image: url("../img/icons/twitter-blue.png");
+}
+
+.footer-twitter-icon-gray {
+    background-image: url("../img/icons/twitter-gray.png");
+}
+
+.footer-facebook-icon {
+    background-image: url("../img/icons/facebook.png");
+}
+
+.footer-share {
+    float: right;
+    padding: 20px;
+}
+
+.footer-share span {
+    display: inline-block;
+    padding: 5px 5px 5px 10px;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #eee;
+    border-radius: 10px 0 0 10px;
+}
+
+.footer-copy {
+    padding: 25px 0 0 20px;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-line {
+        border-bottom: 1px solid #eee;
+    }
+    .footer-links-care {
+        width: 66%;
+        float: left;
+        border: none;
+    }
+    .footer-contacts {
+        width: 33%;
+        float: right;
+        border: none;
+    }
+    .footer-questions {
+        padding-top: 0;
+        float: none;
+        width: 100%;
+    }
+    .footer-phone {
+        padding-top: 0;
+        float: none;
+        border: none;
+        width: 100%;
+    }
+    .footer-contacts .footer-social {
+        display: block;
+        padding: 30px 15px;
+    }
+    .footer-bottom .footer-social {
+        display: none;
+    }
+    .footer-bottom-links,
+    .footer-share {
+        padding: 0;
+        border: none;
+        float: none;
+    }
+    .footer-share {
+        padding-top: 10px;
+    }
+    .footer-bottom {
+        padding: 30px 20px 0 20px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .footer-copy {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        padding-top: 0;
+    }
+    .footer-bottom {
+        padding: 30px 46px 0 40px;
+    }
+    .footer-links-care {
+        padding: 60px;
+        width: 50%;
+        /* border-right: 1px solid #eee; */
+    }
+    .footer-contacts {
+        padding: 60px;
+        width: 50%;
+        border-left: 1px solid #eee;
+    }
+    .footer-questions,
+    .footer-phone {
+        float: left;
+        width: 50%;
+    }
+    .footer-quote {
+        display: block;
+        margin: 20px;
+        width: 60%;
+        color: #757575;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        line-height: 150%;
+    }
+}

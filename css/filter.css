@@ -1,0 +1,184 @@
+/*
+.filter-main {
+    display:none; 
+    VERY IMPORTENT DO NOT FORGET
+}
+*/
+
+.filter {
+    position: relative;
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
+.filter-selected {
+    color: #f14a58;
+}
+
+.filter-not-selected {
+    color: #000;
+}
+
+.filter-header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 20px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.filter-header button {
+    position: absolute;
+    z-index: 2;
+    top: center;
+    right: 0;
+    height: 56px;
+    width: 56px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #d9d9d9;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.filter-main {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    min-width: 375px;
+    padding-bottom: 40px;
+    background: white;
+    font-size: 0;
+}
+
+.filter-value {
+    display: none;
+}
+
+.filter-name {
+    margin: 0;
+    padding: 20px 0 5px 20px;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.filter-list {
+    margin: 0;
+    /* padding: 0; */
+}
+
+.filter-list {
+    color: #d9d9d9;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.filter-list li {
+    padding: 3px 0;
+}
+
+.filter-category {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.filter-gradient {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 56px;
+    width: 100px;
+    background: linear-gradient(to right, transparent, white 50%);
+}
+
+.filter-list li:active {
+    color: #f14a58;
+}
+
+@media screen and (min-width:768px) {
+    .filter-category {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .filter-header {
+        display: none;
+    }
+    .filter-main {
+        position: static;
+        display: -webkit-flex;
+        display: flex;
+        padding: 0 60px;
+        height: 65px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .filter-name {
+        padding: 0;
+        padding-left: 20px;
+    }
+    .filter-list {
+        position: absolute;
+        z-index: 4;
+        top: 63px;
+        left: 0;
+        color: black;
+        background: white;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        display: none;
+        box-shadow: 0px 0px 3px #e5e5e5;
+    }
+    .filter-list li {
+        padding: 5px 20px;
+    }
+    .filter-list li:hover {
+        color: #f14a58;
+    }
+    .filter-category {
+        position: relative;
+        padding-top: 20px;
+        border-left: 1px solid #e5e5e5;
+        background-image: url("../img/icons/down.png");
+        background-repeat: no-repeat;
+        background-position: center right 10px;
+    }
+    .filter-category:last-of-type {
+        border-right: 1px solid #e5e5e5;
+    }
+    .filter-category:hover {
+        color: #f14a58;
+        cursor: pointer;
+    }
+    .filter-category:hover .filter-list {
+        display: block;
+    }
+    .filter-category-selected {
+        padding-top: 10px;
+        background-color: #f7f7f7;
+    }
+    .filter-category-selected .filter-value {
+        display: block;
+        margin: 0;
+        padding: 5px 0 0 20px;
+        color: #f14a58;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+    .filter-category-selected .filter-name {
+        font-size: 12px;
+    }
+}

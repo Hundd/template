@@ -1,0 +1,13 @@
+.l-container {
+    width: 100%;
+    max-width: 1300px;
+    min-width: 375px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.l-flex-multiline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

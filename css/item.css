@@ -1,0 +1,237 @@
+.item {
+    padding-bottom: 86px;
+}
+
+.item a {
+    color: black;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #f14a58;
+}
+
+.item img {
+    width: 100%;
+    margin-top: -4px;
+}
+
+.item nav {
+    height: 54px;
+    padding-left: 20px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 54px;
+}
+
+.item-content {
+    padding: 14px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.item-preview {
+    max-width: 600px;
+}
+
+.item-tumbnails {
+    display: flex;
+    flex-direction: row;
+    flex: 5 1 auto;
+}
+
+.item-tumbnail {
+    position: relative;
+}
+
+.item-foreground {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item-tumbnail.is-selected .item-foreground {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.item-description h2 {
+    margin: 0;
+    padding-top: 50px;
+    font: bold 20px Roboto;
+    text-align: center;
+}
+
+.item-price {
+    font: 18px Roboto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.item-description p {
+    margin: 0;
+    font: italic 14px "Times New Roman", Times;
+    line-height: 250%;
+    text-align: center;
+}
+
+.item-description input {
+    display: none;
+}
+
+.item-form-row {
+    margin-top: 30px;
+}
+
+.item-form-row h3 {
+    margin: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font: 12px Roboto;
+    line-height: 40px;
+}
+
+.item-form-row label {
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    margin-right: 20px;
+    font: bold 14px "Open Sans";
+    line-height: 40px;
+    text-align: center;
+}
+
+.item-form-row input:checked+label {
+    border: 1px solid #e5e5e5;
+}
+
+.item-form-row label:last-of-type {
+    margin-right: 0;
+}
+
+.item-form-row label:hover,
+.item-description button:hover {
+    border: 1px solid #f14a58;
+    color: #f14a58;
+}
+
+.item-description button {
+    display: block;
+    width: 218px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid #e5e5e5;
+    background: white;
+    outline: none;
+    font: bold 18px "Open Sans";
+}
+
+@media screen and (min-width: 768px) {
+    .item nav {
+        padding-left: 65px;
+    }
+    .item-content {
+        padding: 40px 20px;
+        max-width: 840px;
+    }
+    .item-preview {
+        max-width: 840px;
+        display: flex;
+    }
+    .item-tumbnails {
+        display: block;
+    }
+    .item-form-row {
+        text-align: center;
+    }
+    .item-description {
+        max-width: 442px;
+        margin: 0 auto;
+    }
+    .item-description button {
+        margin-top: 100px;
+    }
+    .item {
+        padding-bottom: 100px;
+    }
+    .item-description button {
+        width: 260px;
+        height: 70px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .item nav {
+        padding-left: 90px;
+    }
+    .item-content {
+        display: flex;
+        max-width: 100%;
+        padding: 60px;
+    }
+    .item-preview {
+        display: block;
+    }
+    .item-tumbnails {
+        display: flex;
+    }
+    .item-description {
+        display: block;
+        margin: 0;
+        padding-left: 50px;
+        max-width: 50%;
+    }
+    .item-description h2 {
+        padding-top: 15px;
+        font: bold 26px Roboto;
+        text-align: left;
+    }
+    .item-price {
+        font: 25px Roboto;
+        text-align: left;
+        padding: 30px 0;
+    }
+    .item-description p {
+        font: italic 16px "Times New Roman", Times;
+        line-height: 250%;
+        text-align: left;
+    }
+    .item-form-row {
+        text-align: left;
+    }
+    .item-description button {
+        margin-top: 50px;
+    }
+    .item-description-text {
+        display: table;
+    }
+    .item-description-second {
+        display: table-header-group;
+    }
+    .item-description-first {
+        display: table-footer-group;
+    }
+    .item-form-row {
+        margin-top: 20px;
+    }
+    .item-description p {
+        padding-top: 20px;
+        line-height: 200%;
+    }
+    .item-form-row h3 {
+        width: 80px;
+    }
+    .item-description button {
+        width: 340px;
+        height: 60px;
+        font-size: 24px;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,160 @@
+.arrivals-description {
+    padding: 10px 10px;
+    padding-top: 48px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.arrivals-price {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+}
+
+.arrivals-header {
+    margin: 0;
+    padding: 140px 0 100px 0;
+    font-family: "Open Sans";
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.arrivals {
+    padding: 0 60px;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.arrivals-item {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.arrivals-figure {
+    margin: 0;
+}
+
+.arrivals-item img,
+.banners img {
+    width: 100%;
+}
+
+.banners {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.banners a:first-of-type {
+    border-right: 1px solid #eee;
+}
+
+.arrivals-all {
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 80px;
+    display: block;
+    height: 75px;
+    width: 340px;
+    border: 2px solid #e5e5e5;
+    color: black;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 75px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.arrivals-all:hover {
+    border-color: #f14a58;
+}
+
+.banner-arrivals {
+    margin-top: -1px;
+    padding-bottom: 80px;
+}
+
+.banners img {
+    margin-bottom: -5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .banners {
+        margin-top: 1px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .banners a {
+        width: 50%;
+    }
+    .banners a:first-of-type {
+        float: left;
+    }
+    .banners a:nth-of-type(2) {
+        float: right;
+    }
+    .banners a:last-of-type {
+        display: none;
+    }
+    .arrivals-item {
+        width: 25%;
+        max-width: 240px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .banners a:first-of-type {
+        float: left;
+        width: 66%;
+    }
+    .banners a:nth-of-type(2) {
+        display: none;
+    }
+    .banners a:last-of-type {
+        float: right;
+        width: 33%;
+    }
+    .arrivals-item:nth-of-type(4) {
+        display: none;
+    }
+    .arrivals-item {
+        width: 33%;
+        max-width: 240px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banners a:first-of-type {
+        float: left;
+        width: 100%;
+    }
+    .banners a:nth-of-type(2) {
+        display: none;
+    }
+    .banners a:last-of-type {
+        display: none;
+    }
+    .arrivals-item:nth-of-type(3) {
+        display: none;
+    }
+    .arrivals-item {
+        width: 50%;
+        max-width: 240px;
+    }
+    .arrivals {
+        padding: 10px;
+    }
+    .arrivals-header {
+        padding: 60px 0 50px 0;
+    }
+}

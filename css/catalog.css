@@ -1,0 +1,138 @@
+.catalog img {
+    margin-bottom: -5px;
+}
+
+.catalog-description {
+    padding: 10px 10px;
+    padding-top: 30px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.catalog-price {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+}
+
+.catalog-figure {
+    margin: 0;
+    width: 100%;
+    max-width: 240px;
+}
+
+.catalog-figure img {
+    width: 100%;
+}
+
+.catalog-item {
+    position: relative;
+    width: 48%;
+    max-width: 240px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.catalog {
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+}
+
+.catalog-promo {
+    width: 100%;
+    order: 1;
+    padding: 20px 30px 60px 30px;
+    text-align: center;
+}
+
+.catalog-promo h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.catalog-promo em {
+    color: #f14a58;
+    font-style: normal;
+}
+
+.catalog-promo p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 200%;
+}
+
+@media screen and (max-width:767px) {
+    .catalog-item {
+        width: 48%;
+        max-width: 240px;
+    }
+    .catalog-item:nth-of-type(n + 3) {
+        order: 2;
+    }
+}
+
+.catalog-view-container {
+    position: relative;
+}
+
+.catalog-view {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f14a58;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.catalog-item:hover .catalog-view {
+    display: block;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .catalog {
+        padding: 0 40px;
+    }
+    .catalog-item {
+        width: 30%;
+        max-width: 240px;
+    }
+    .catalog-item:nth-of-type(n + 4) {
+        order: 2;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .catalog {
+        padding: 40px 60px;
+    }
+    .catalog-item {
+        width: 23%;
+        max-width: 240px;
+    }
+    .catalog-item:nth-of-type(n + 5) {
+        order: 2;
+    }
+}

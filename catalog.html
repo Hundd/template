@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catalog Page</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/banners.css">
+    <script src="js/header.js" defer></script>
+    <script src="js/catalog.js" defer></script>
+    <script src="js/filter.js" defer></script>
+</head>
+
+<body>
+    <div class="l-container">
+<header class="header">
+    <div class="header-logo"><a href="start.html">TL</a></div>
+    <a class="header-menu" href="#" id="header-menu">
+        <div class="header-menu-item"></div>
+        <div class="header-menu-item"></div>
+        <div class="header-menu-item"></div>
+        <div class="header-menu-close" hidden>X</div>
+    </a>
+    <a class="header-bag" href="shopping-bag.html">Bag <span id="bag-content">(0)</span></a>
+    <div class="header-links">
+        <a href="#">E-mail</a>
+        <a href="#">sign up</a>
+    </div>
+    <a href="start.html">
+        <h1>Template</h1>
+    </a>
+    <div class="header-menu-n-search">
+        <nav class="header-nav">
+            <ul>
+                <li class="header-category"><a href="catalog.html">Women</a></li>
+                <li class="header-category"><a href="catalog.html">Men</a></li>
+                <li class="header-category"><a href="catalog.html">Handbags</a></li>
+                <li class="header-category"><a href="catalog.html">Accessories</a></li>
+                <li class="header-category"><a href="catalog.html">Sale</a></li>
+                <li class="header-category"><a href="catalog.html">New Arrivals</a></li>
+                <li class="header-category"><a href="catalog.html">Clearance</a></li>
+                <li class="header-category"><a href="catalog.html">Store Locator</a></li>
+            </ul>
+        </nav>
+        <form class="header-search">
+            <input type="text" name="s" id="header-search" required>
+            <label for="header-search">Style Name</label>
+            <button type="submit" id="header-search-button"></button>
+        </form>
+    </div>
+</header>
+<div class="filter">
+
+    <header class="filter-header">
+        <span class="filter-selected">Casual style</span>,
+        <span>Product type</span>,
+        <span>Color</span>,
+        <span class="filter-selected">Antipodium</span>,
+        <span class="filter-selected">UK 18</span>,
+        <span>Price range</span>
+        <button id="filter-btn-close">V</button>
+        <div class="filter-gradient"></div>
+    </header>
+
+    <div class="filter-main">
+        <section class="filter-category filter-category-selected">
+            <h4 class="filter-name">Fashion</h4>
+            <h4 class="filter-value">Casual style</h4>
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>Nail the 90s</li>
+                <li class="filter-selected">Casual style</li>
+                <li>New Look</li>
+                <li>Sport</li>
+                <li>Vintage</li>
+                <li>Classical style</li>
+            </ul>
+        </section>
+
+        <section class="filter-category">
+            <h4 class="filter-name">Product type</h4>
+            <h4 class="filter-value"></h4>
+            <ul class="filter-list">
+                <li class="filter-not-selected">Not selected</li>
+                <li>Coats &amp; Jackets</li>
+                <li>Dresses</li>
+                <li>Jersey Tops</li>
+            </ul>
+        </section>
+        <section class="filter-category">
+            <h4 class="filter-name">Color</h4>
+            <h4 class="filter-value"></h4>
+            <ul class="filter-list">
+                <li class="filter-not-selected">Not selected</li>
+                <li>Black</li>
+                <li>Blue</li>
+                <li>Red</li>
+                <li>Green</li>
+                <li>Golden</li>
+            </ul>
+        </section>
+        <section class="filter-category filter-category-selected">
+            <h4 class="filter-name">Brand</h4>
+            <h4 class="filter-value">Antipodium</h4>
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>Chi Chi London</li>
+                <li class="filter-selected">Antipodium</li>
+                <li>Adidas</li>
+                <li>New Balance</li>
+                <li>River Island</li>
+            </ul>
+        </section>
+        <section class="filter-category filter-category-selected">
+            <h4 class="filter-name">Size</h4>
+            <h4 class="filter-value">UK 18</h4>
+            <ul class="filter-list">
+                <li>Not selected</li>
+                <li>UK 2</li>
+                <li class="filter-selected">UK 18</li>
+                <li>UK 18L</li>
+                <li>UK 20</li>
+                <li>UK 20L</li>
+                <li>UK 20S</li>
+                <li>UK 22S</li>
+                <li>UK 22</li>
+            </ul>
+        </section>
+        <section class="filter-category">
+            <h4 class="filter-name">Price range</h4>
+            <h4 class="filter-value"></h4>
+            <ul class="filter-list">
+                <li class="filter-not-selected">Not selected</li>
+                <li>To &pound;99</li>
+                <li>&pound;100 &ndash; &pound;299</li>
+                <li>From &pound;300</li>
+            </ul>
+        </section>
+    </div>
+
+</div>
+<div class="catalog l-flex-multiline">
+    <div class="catalog-promo">
+        <h2>Last weekend <em>extra 50%</em> off on all reduced boots and shoulder bags</h2>
+        <p>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</p>
+    </div>
+
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/01.jpg" alt="Only Skinny Jeans">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Only Skinny Jeans</div>
+                    <div class="catalog-price">&pound;65.50</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/02.jpg" alt="Straight Leg Jeans">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Neck Knitted Jumper</div>
+                    <div class="catalog-price">&pound;76.25</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/03.jpg" alt="Boyfriend T-Shirt with Bohemian Print">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Turtle Neck Jumper in Rib</div>
+                    <div class="catalog-price">&pound;130.25 <em>New</em></div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/04.jpg" alt="Only Busted Knee Jean">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">With Patchwork Crochet</div>
+                    <div class="catalog-price">&pound;80.60</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/05.jpg" alt="Only Skinny Jeans">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Only Skinny Jeans</div>
+                    <div class="catalog-price">&pound;65.50</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/06.jpg" alt="Straight Leg Jeans">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Neck Knitted Jumper</div>
+                    <div class="catalog-price">&pound;76.25</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/07.jpg" alt="Boyfriend T-Shirt with Bohemian Print">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Turtle Neck Jumper in Rib</div>
+                    <div class="catalog-price">&pound;130.25 <em>New</em></div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/08.jpg" alt="Only Busted Knee Jean">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">With Patchwork Crochet</div>
+                    <div class="catalog-price">&pound;80.60</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/09.jpg" alt="Only Skinny Jeans">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Only Skinny Jeans</div>
+                    <div class="catalog-price">&pound;65.50</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/10.jpg" alt="Straight Leg Jeans">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Neck Knitted Jumper</div>
+                    <div class="catalog-price">&pound;76.25</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/11.jpg" alt="Boyfriend T-Shirt with Bohemian Print">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">Turtle Neck Jumper in Rib</div>
+                    <div class="catalog-price">&pound;130.25 <em>New</em></div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+    <article class="catalog-item">
+        <a href="item.html">
+            <figure class="catalog-figure">
+                <div class="catalog-view-container">
+                    <img src="img/catalog/12.jpg" alt="Only Busted Knee Jean">
+                    <div class="catalog-view">View item</div>
+                </div>
+                <figcaption>
+                    <div class="catalog-description">With Patchwork Crochet</div>
+                    <div class="catalog-price">&pound;80.60</div>
+                </figcaption>
+            </figure>
+        </a>
+    </article>
+</div>
+<div class="banners clearfix">
+    <a href="item.html">
+        <img src="img/banner-4.png" alt="Adidas">
+    </a>
+    <a href="catalog.html">
+        <img src="img/banner-5.png" alt="Repaired Patches">
+    </a>
+    <a href="catalog.html">
+        <img src="img/banner-3.png" alt="Sale">
+    </a>
+</div>
+<footer class="footer">
+
+    <section class="footer-links-care clearfix">
+        <nav class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Store locator</a></li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Size guide</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <nav class="footer-care">
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="#">Customer service</a></li>
+                <li><a href="#">Track my order</a></li>
+                <li><a href="#">Return policy</a></li>
+                <li><a href="#">Shipping &amp; delivery</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="footer-contacts">
+
+        <div class="footer-questions">
+            <h4>Questions</h4>
+            <div class="footer-twitter">
+                Tweet us <a href="https://twitter.com/template">@template</a>
+            </div>
+        </div>
+
+        <div class="footer-phone">
+            <h4>Order by phone</h4>
+            <div>8-800-409-47-12</div>
+        </div>
+        <div class="clearfix"></div>
+        <blockquote class="footer-quote">
+            We have our own delivery service which operates in 23 major European cities. Delivery time &ndash; 3-5 days.
+        </blockquote>
+
+        <div class="footer-social">
+            <a href="#"><i class="footer-icon footer-facebook-icon"></i></a>
+            <a href="#"><i class="footer-icon footer-twitter-icon-blue"></i></a>
+        </div>
+
+    </section>
+    <div class="clearfix footer-line"></div>
+
+    <section class="footer-bottom">
+        <nav class="footer-bottom-links">
+            <div class="footer-social">
+                <a href="#"><i class="footer-icon footer-facebook-icon"></i></a>
+                <a href="#"><i class="footer-icon footer-twitter-icon-blue"></i></a>
+            </div>
+            <ul>
+                <li><a href="#">Legal notice</a></li>
+                <li><a href="#">Privace policy</a></li>
+                <li><a href="#">Site map</a></li>
+            </ul>
+        </nav>
+        <h4 class="footer-share">Share <span>1 437</span></h4>
+        <div class="footer-copy">&copy; 2010-2015, The template Group inc.</div>
+    </section>
+</footer>
+</div>
+</body>
+
+</html>
