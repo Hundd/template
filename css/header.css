@@ -122,7 +122,8 @@
     .header-search input:focus {
         outline: none;
     }
-    .header-search input:focus+label {
+    .header-search input:focus+label,
+    label.is-full {
         top: -20px;
         left: 5px;
     }
@@ -263,7 +264,8 @@
         color: #e5e5e5;
         font-weight: bold;
     }
-    .header-search input:focus~label {
+    .header-search input:focus~label,
+    label.is-full {
         top: -28px;
     }
     .header-search button {

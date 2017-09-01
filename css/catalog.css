@@ -20,6 +20,11 @@
     color: black;
 }
 
+.catalog-price em {
+    color: #757575;
+    font: italic 14px "Times New Roman", Times, Serif;
+}
+
 .catalog-figure {
     margin: 0;
     width: 100%;
@@ -76,6 +81,17 @@
     line-height: 200%;
 }
 
+.catalog button {
+    border: 1px solid #e5e5e5;
+    outline: none;
+    background: white;
+    width: 220px;
+    height: 60px;
+    margin: 20px 0 100px 50%;
+    transform: translateX(-50%);
+    font: bold 18px/60px "Open Sans";
+}
+
 @media screen and (max-width:767px) {
     .catalog-item {
         width: 48%;
@@ -122,6 +138,23 @@
     .catalog-item:nth-of-type(n + 4) {
         order: 2;
     }
+    .catalog button {
+        width: 260px;
+        height: 70px;
+        margin: 35px 0 140px 50%;
+        font: bold 18px/70px "Open Sans";
+    }
+    /*FONTS*/
+    .catalog-description,
+    .catalog-price {
+        font-size: 14px;
+    }
+    .catalog-promo h2 {
+        font-size: 20px;
+    }
+    .catalog-promo p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -134,5 +167,22 @@
     }
     .catalog-item:nth-of-type(n + 5) {
         order: 2;
+    }
+    .catalog button {
+        width: 340px;
+        height: 75px;
+        margin: 50px 0 160px 50%;
+        font: bold 24px/75px "Open Sans";
+    }
+    /*FONTS*/
+    .catalog-description,
+    .catalog-price {
+        font-size: 14px;
+    }
+    .catalog-promo h2 {
+        font-size: 24px;
+    }
+    .catalog-promo p {
+        font-size: 16px;
     }
 }

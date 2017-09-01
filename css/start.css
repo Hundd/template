@@ -75,9 +75,10 @@
     text-decoration: none;
 }
 
-.arrivals-all:hover {
+
+/*.arrivals-all:hover {
     border-color: #f14a58;
-}
+}*/
 
 .banner-arrivals {
     margin-top: -1px;
