@@ -70,6 +70,8 @@ filterRender();
 
 // Implement filter selection
 filterMain.addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
     if (e.target.hasAttribute("data-id")) {
         var attr = e.target.getAttribute("data-id");
         var element = attr[0];

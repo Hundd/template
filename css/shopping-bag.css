@@ -17,6 +17,7 @@
 
 .bag-view-container img {
     width: 100%;
+    margin-bottom: -4px;
 }
 
 .bag-view {
@@ -141,7 +142,7 @@
     }
     .bag-content {
         padding: 30px 40px;
-        justify-content: flex-start;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
     }
     .bag-price {

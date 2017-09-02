@@ -7,7 +7,9 @@
 }
 
 .l-flex-multiline {
+    -webkit-display: flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-around;
 }

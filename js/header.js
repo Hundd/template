@@ -43,3 +43,26 @@ document.getElementById("header-search").addEventListener("change", function(e) 
         document.querySelector('label[for="header-search"]').classList.remove("is-full");
     }
 });
+
+//Refresh Header Bag Status 
+
+function headerRefreshBag() {
+    var headerBagContent = document.getElementById("header-bag-content");
+    if (!("bag" in localStorage) || !localStorage.bag) {
+        headerBagContent.textContent = "(0)";
+        return;
+    }
+    var bag = JSON.parse(localStorage.bag);
+    if (bag.length === 0) {
+        headerBagContent.textContent = "(0)";
+        return;
+    }
+    var totalPrice = 0,
+        totalItems = 0;
+    bag.forEach(function(item) {
+        totalPrice += parseFloat(item.price.slice(1));
+        totalItems += 1;
+    });
+    headerBagContent.innerHTML = "&nbsp; &pound;" + totalPrice.toLocaleString() + "&nbsp; (" + totalItems + ")";
+}
+headerRefreshBag();

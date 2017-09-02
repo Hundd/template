@@ -1,4 +1,4 @@
-<div class="item">
+<div class="item" data-id="0" id="item">
     <nav>
         <a href="catalog.html">&lt; Back to catalog</a>
     </nav>
@@ -6,7 +6,7 @@
         <div class="item-preview">
 
             <div class="item-main-veiw">
-                <img src="img/item/dark_suit-1.jpg" alt="dark_suit">
+                <img src="img/item/dark_suit-1.jpg" alt="dark_suit" id="item-image">
             </div>
 
             <div class="item-tumbnails">
@@ -29,25 +29,25 @@
         </div>
 
         <div class="item-description">
-            <h2>Dark classic fit suit</h2>
+            <h2 id="item-name">Dark classic fit suit</h2>
 
             <div class="item-description-text">
                 <div class="item-description-first">
-                    <div class="item-price">&pound;180.60</div>
+                    <div class="item-price" id="item-price">&pound;180.60</div>
                 </div>
                 <div class="item-description-second">
                     <p>Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs and a subtle stripe pattern throughout.</p>
                 </div>
             </div>
-            <form action="shopping-bag.html">
+            <form id="shopping-form">
 
                 <div class="item-form-row">
                     <h3>Size</h3>
-                    <input type="radio" name="size" id="item-size1" value="UK 52" checked>
+                    <input class="item-size" type="radio" name="size" id="item-size1" value="UK 52" checked>
                     <label for="item-size1">UK 52</label>
-                    <input type="radio" name="size" id="item-size2" value="UK 54">
+                    <input class="item-size" type="radio" name="size" id="item-size2" value="UK 54">
                     <label for="item-size2">UK 54</label>
-                    <input type="radio" name="size" id="item-size3" value="UK 56">
+                    <input class="item-size" type="radio" name="size" id="item-size3" value="UK 56">
                     <label for="item-size3">UK 56</label>
                 </div>
                 <div class="item-form-row">

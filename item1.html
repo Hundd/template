@@ -2,18 +2,20 @@
 <html>
 
 <head>
-    <title>Start Page</title>
+    <title>Item Page</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/banners.css">
+    <link rel="stylesheet" href="css/item.css">
     <script src="js/header.js" defer></script>
-    <script src="js/carousel.js" defer></script>
+    <script src="js/item.js" defer></script>
 </head>
 
 <body>
@@ -52,72 +54,84 @@
         </form>
     </div>
 </header>
-<div class="carousel">
-    <a href="#" id="carousel-anchor" class="carousel-img-wrapper">
-        <img alt="goods" id="carousel-image1" class="carousel-image">
-        <img alt="goods" id="carousel-image2" class="carousel-image is-hidden">
-        <img alt="goods" id="carousel-image3" class="carousel-image is-hidden">
-    </a>
-    <a href="#" class="carousel-btn" id="carousel-prev-btn">&lt;</a>
-    <a href="#" class="carousel-btn" id="carousel-next-btn">&gt;</a>
-    <footer id="carousel-bullets">
-        <a href="#" class="carousel-bullet is-active" id="carousel-bullet1"></a>
-        <a href="#" class="carousel-bullet" id="carousel-bullet2"></a>
-        <a href="#" class="carousel-bullet" id="carousel-bullet3"></a>
-    </footer>
+<div class="item" data-id="1" id="item">
+    <nav>
+        <a href="catalog.html">&lt; Back to catalog</a>
+    </nav>
+    <div class="item-content">
+        <div class="item-preview">
+
+            <div class="item-main-veiw">
+                <img src="img/item/twerk-3.jpg" alt="dont let twerk" id="item-image">
+            </div>
+
+            <div class="item-tumbnails">
+                <div class="item-tumbnail">
+                    <div class="item-foreground"></div>
+                    <img src="img/item/tumb-twerk-1.jpg" alt="dont let twerk">
+                </div>
+
+                <div class="item-tumbnail">
+                    <div class="item-foreground"></div>
+                    <img src="img/item/tumb-twerk-2.jpg" alt="dont let twerk">
+                </div>
+
+                <div class="item-tumbnail is-selected">
+                    <div class="item-foreground"></div>
+                    <img src="img/item/tumb-twerk-3.jpg" alt="dont let twerk">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item-description">
+            <h2 id="item-name">Friends don't let friends twerk t-shirt</h2>
+
+            <div class="item-description-text">
+                <div class="item-description-first">
+                    <div class="item-price" id="item-price">&pound;356.60</div>
+                </div>
+                <div class="item-description-second">
+                    <p>100% ring-spun cotton (gray color is 90% cotton/10% polyester) | Fabric Weight: 6.1 oz (heavyweight).</p>
+                </div>
+            </div>
+            <form id="shopping-form">
+
+                <div class="item-form-row">
+                    <h3>Size</h3>
+                    <input class="item-size" type="radio" name="size" id="item-size1" value="UK 46" checked>
+                    <label for="item-size1">UK 46</label>
+                    <input class="item-size" type="radio" name="size" id="item-size2" value="UK 48">
+                    <label for="item-size2">UK 48</label>
+                    <input class="item-size" type="radio" name="size" id="item-size3" value="UK 50">
+                    <label for="item-size3">UK 50</label>
+                </div>
+                <div class="item-form-row">
+                    <h3>Color</h3>
+                    <input type="radio" name="color" id="item-color1" value="Black" checked>
+                    <label for="item-color1">Black</label>
+
+                    <input type="radio" name="color" id="item-color2" value="Blue">
+                    <label for="item-color2">Blue</label>
+
+                    <input type="radio" name="color" id="item-color3" value="Purple">
+                    <label for="item-color3">Purple</label>
+                </div>
+                <button type="submit">Add to bag</button>
+            </form>
+        </div>
+    </div>
 </div>
-<div class="banner-arrivals">
-    <div class="banners clearfix">
-        <a href="item.html">
-            <img src="img/banner-1.png" alt="Red Nike">
-        </a>
-        <a href="catalog.html">
-            <img src="img/banner-2.png" alt="Caps n Hats">
-        </a>
-        <a href="catalog.html">
-            <img src="img/banner-3.png" alt="Sale">
-        </a>
-    </div>
-    <h2 class="arrivals-header">New Arrivals</h2>
-    <div class="arrivals">
-        <a href="item.html" class="arrivals-item">
-            <figure class="arrivals-figure">
-                <img src="img/arrival-1.jpg" alt="Straight Leg Jeans">
-                <figcaption>
-                    <div class="arrivals-description">Straight Leg Jeans</div>
-                    <div class="arrivals-price">&pound;55.00</div>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="item.html" class="arrivals-item">
-            <figure class="arrivals-figure">
-                <img src="img/arrival-2.jpg" alt="Boyfriend T-Shirt with Bohemian Print">
-                <figcaption>
-                    <div class="arrivals-description">Boyfriend T-Shirt with Bohemian Print</div>
-                    <div class="arrivals-price">&pound;34.25</div>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="item.html" class="arrivals-item">
-            <figure class="arrivals-figure">
-                <img src="img/arrival-3.jpg" alt="Only Busted Knee Jean">
-                <figcaption>
-                    <div class="arrivals-description">Only Busted Knee Jean</div>
-                    <div class="arrivals-price">&pound;140.50</div>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="item.html" class="arrivals-item">
-            <figure class="arrivals-figure">
-                <img src="img/arrival-4.jpg" alt="Only Skinny Jeans">
-                <figcaption>
-                    <div class="arrivals-description">Only Skinny Jeans</div>
-                    <div class="arrivals-price">&pound;12.75</div>
-                </figcaption>
-            </figure>
-        </a>
-    </div>
-    <a href="catalog.html" class="arrivals-all hoverable">All Arrivals</a>
+<div class="banners clearfix">
+    <a href="item.html">
+        <img src="img/banner-4.png" alt="Adidas">
+    </a>
+    <a href="catalog.html">
+        <img src="img/banner-5.png" alt="Repaired Patches">
+    </a>
+    <a href="catalog.html">
+        <img src="img/banner-3.png" alt="Sale">
+    </a>
 </div>
 <footer class="footer">
 

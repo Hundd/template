@@ -1,5 +1,7 @@
 .banners {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
@@ -10,6 +12,7 @@
 }
 
 .banners a {
+    -webkit-flex: 0 1 auto;
     flex: 0 1 auto;
     display: none;
     margin-bottom: -5px;

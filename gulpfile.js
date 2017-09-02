@@ -10,7 +10,8 @@ gulp.task('concat-html', [
     'concat-item-draft',
     'concat-item',
     'concat-shopping-bag-draft',
-    'concat-shopping-bag'
+    'concat-shopping-bag',
+    'concat-item1'
 ]);
 gulp.task('concat-catalog-draft', function() {
     //Catalog Draft
@@ -79,7 +80,20 @@ gulp.task('concat-item-draft', function() {
         .pipe(gulp.dest("./"));
 });
 
+gulp.task('concat-item1', function() {
+    //Item Main Page
+    return gulp.src([
+            './templates/item-head.html',
+            './templates/header-template.html',
+            './templates/item1-template.html',
+            './templates/banners-template.html',
+            './templates/footer-template.html',
+            './templates/common-bottom.html'
+        ])
+        .pipe(concat('item1.html'))
+        .pipe(gulp.dest("./"));
 
+});
 
 
 gulp.task('concat-shopping-bag', function() {

@@ -22,35 +22,21 @@ carouselAnchor.addEventListener("touchmove", function(e) {
     carousel.xFinish = e.touches[0].screenX;
     carousel.yFinish = e.touches[0].screenY;
 
-    if (window.innerHeight > window.innerWidth) {
-        if (Math.abs(carousel.xStart - carousel.xFinish) < Math.abs(carousel.yStart - carousel.yFinish)) {
-            return;
-        }
-        e.preventDefault();
-        if (carousel.xStart - carousel.xFinish < -0) {
-            //Right
-            carousel.nextImage();
-        }
 
-        if (carousel.xStart - carousel.xFinish > 0) {
-            //Left
-            carousel.prevImage();
-        }
-    } else if (window.innerHeight < window.innerWidth) {
-        if (Math.abs(carousel.xStart - carousel.xFinish) > Math.abs(carousel.yStart - carousel.yFinish)) {
-            return;
-        }
-        e.preventDefault();
-        if (carousel.yStart - carousel.yFinish < -0) {
-            //Right
-            carousel.nextImage();
-        }
-
-        if (carousel.yStart - carousel.yFinish > 0) {
-            //Left
-            carousel.prevImage();
-        }
+    if (Math.abs(carousel.xStart - carousel.xFinish) < Math.abs(carousel.yStart - carousel.yFinish)) {
+        return;
     }
+    e.preventDefault();
+    if (carousel.xStart - carousel.xFinish < -0) {
+        //Right
+        carousel.nextImage();
+    }
+
+    if (carousel.xStart - carousel.xFinish > 0) {
+        //Left
+        carousel.prevImage();
+    }
+
 
 });
 carouselAnchor.addEventListener("touchend", function(e) {
