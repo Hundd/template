@@ -43,11 +43,13 @@ carouselAnchor.addEventListener("touchend", function(e) {
     carousel.xFinish = 0;
 });
 carouselAnchor.addEventListener("click", function(e) {
-    console.log(window.location.pathname);
+    var path = window.location.href.match(/(.+)\/[^\/]+$/)[1];
+    console.log(path);
+
     if (carousel.currentImage % 2) {
-        window.location.pathname = "/catalog.html";
+        window.location.href = path + "/catalog.html";
     } else {
-        window.location.pathname = "/item.html";
+        window.location.href = path + "/item.html";
     }
     e.preventDefault();
 });
