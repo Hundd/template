@@ -52,7 +52,7 @@
     display: none;
     position: absolute;
     z-index: 4;
-    top: 60px;
+    top: 57px;
     left: 0;
     width: 100%;
     min-width: 375px;
@@ -111,6 +111,13 @@
 @media screen and (min-width:768px) {
     .filter-category {
         width: 33.3%;
+    }
+    .filter-main {
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+    .filter-header {
+        padding-left: 30px;
     }
 }
 

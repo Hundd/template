@@ -1,24 +1,36 @@
 var filterBtn = document.getElementById("filter-btn-close");
 var filterMain = document.querySelector(".filter-main");
 var filterHeader = document.querySelector(".filter-header");
+var catalogForeground = document.querySelector("#catalog-foreground");
 filterBtn.state = "collapsed";
+
+function filterExpand() {
+    filterBtn.state = "expanded";
+    filterMain.style.display = "block";
+    filterBtn.innerHTML = "X";
+    filterBtn.style.color = "red";
+    catalogForeground.classList.add("is-visible");
+}
+
+function filterCollapse() {
+    filterBtn.state = "collapsed";
+    filterMain.style.display = "none";
+    filterBtn.innerHTML = "V";
+    filterBtn.style.color = "#d9d9d9";
+    catalogForeground.classList.remove("is-visible");
+}
+
 filterBtn.changeState = function(e) {
     if (filterBtn.state === "collapsed") {
-        filterBtn.state = "expanded";
-        filterMain.style.display = "block";
-        filterBtn.innerHTML = "X";
-        filterBtn.style.color = "red";
+        filterExpand();
     } else {
-        filterBtn.state = "collapsed";
-        filterMain.style.display = "none";
-        filterBtn.innerHTML = "V";
-        filterBtn.style.color = "#d9d9d9";
+        filterCollapse();
     }
     e.stopPropagation();
 };
 filterBtn.addEventListener("click", filterBtn.changeState);
 filterHeader.addEventListener("click", filterBtn.changeState);
-
+catalogForeground.addEventListener("click", filterCollapse);
 //
 // var filterState = ["Casual style", "", "", "Antipodium", "UK 18", ""];
 var filterState = [5, 0, 0, 0, 3, 0];

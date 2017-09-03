@@ -1,6 +1,6 @@
 var headerMenu = document.querySelector("#header-menu");
 headerMenu.state = "collapsed";
-
+var shadow = document.querySelector("#shadow");
 headerMenu.expand = function() {
     headerMenu.state = "expanded";
     Array.prototype.forEach.call(
@@ -11,6 +11,7 @@ headerMenu.expand = function() {
     );
     document.querySelector(".header-menu-close").hidden = false;
     document.querySelector(".header-menu-n-search").style.display = "block";
+    shadow.classList.add("is-visible");
 };
 
 headerMenu.collapse = function() {
@@ -23,6 +24,7 @@ headerMenu.collapse = function() {
     );
     document.querySelector(".header-menu-close").hidden = true;
     document.querySelector(".header-menu-n-search").style.display = "none";
+    shadow.classList.remove("is-visible");
 }
 
 headerMenu.addEventListener("click", function(e) {
@@ -34,6 +36,7 @@ headerMenu.addEventListener("click", function(e) {
     }
     return false;
 });
+shadow.addEventListener("click", headerMenu.collapse);
 
 //header search stays opened 
 document.getElementById("header-search").addEventListener("change", function(e) {
@@ -66,3 +69,7 @@ function headerRefreshBag() {
     headerBagContent.innerHTML = "&nbsp; &pound;" + totalPrice.toLocaleString() + "&nbsp; (" + totalItems + ")";
 }
 headerRefreshBag();
+
+setTimeout(function() {
+    shadow.style.height = document.body.offsetHeight - 100 + "px";
+}, 1000);

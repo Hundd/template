@@ -1,9 +1,10 @@
 .carousel img {
-    margin-top: -4px;
+    /* margin-top: -4px; */
     margin-bottom: -1px;
 }
 
 .carousel {
+    border-top: 1px solid #e5e5e5;
     width: 100%;
     position: relative;
 }
