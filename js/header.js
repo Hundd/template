@@ -2,6 +2,9 @@ var headerMenu = document.querySelector("#header-menu");
 headerMenu.state = "collapsed";
 var shadow = document.querySelector("#shadow");
 headerMenu.expand = function() {
+    if (typeof filterCollapse !== "undefined") {
+        filterCollapse();
+    }
     headerMenu.state = "expanded";
     Array.prototype.forEach.call(
         document.querySelectorAll(".header-menu-item"),
